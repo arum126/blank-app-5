@@ -3,8 +3,6 @@ import pandas as pd
 from datetime import date
 
 # ====== CSS LATAR HIJAU TUA ======
-st.markdown(
-    """
     <style>
     /* Warna latar utama */
     .stApp {
