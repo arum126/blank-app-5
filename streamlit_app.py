@@ -2,6 +2,35 @@ import streamlit as st
 import pandas as pd
 from datetime import date
 
+# ====== CSS LATAR HIJAU TUA ======
+st.markdown(
+    """
+    <style>
+    /* Warna latar utama */
+    .stApp {
+        background-color: #1b5e20;   /* hijau tua */
+        color: white;                /* teks jadi putih */
+    }
+
+    /* Pastikan semua teks default ikut putih */
+    h1,h2,h3,h4,h5,h6, p, label, span, div {
+        color: white !important;
+    }
+
+    /* Kotak input & widget agar tidak silau */
+    .css-1cpxqw2, .css-1d391kg, .css-1n76uvr, .stTextInput>div>div>input {
+        background-color: #2e7d32 !important;  /* hijau sedikit lebih terang */
+        color: white !important;
+    }
+
+    /* Sidebar dengan hijau lebih gelap agar kontras */
+    section[data-testid="stSidebar"] {
+        background-color: #145a17 !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+
 # ---------- Inisialisasi ----------
 if "records" not in st.session_state:
     st.session_state.records = []          # list of dicts
